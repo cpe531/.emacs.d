@@ -28,7 +28,7 @@
 
 ;; font
 ;;(set-face-attribute 'default nil :font "IBM Plex Mono")
-(set-face-attribute 'default nil :font "Iosevka Term")
+;;(set-face-attribute 'default nil :font "Iosevka Term")
 
 ;; stop yelling at me
 (setq visible-bell t)

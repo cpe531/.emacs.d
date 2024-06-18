@@ -25,10 +25,13 @@
 ;; M-x load-theme is the correct way to do this
 ;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
 (load-theme 'catppuccin :no-confirm)
+(setq catppuccin-flavor 'latte) ;; 'latte, 'frappe, 'macchiato, or 'mocha
+(catppuccin-reload)
 
 ;; font
 ;;(set-face-attribute 'default nil :font "IBM Plex Mono")
 ;;(set-face-attribute 'default nil :font "Iosevka Term")
+(set-face-attribute 'default nil :font "Source Code Pro-10")
 
 ;; stop yelling at me
 (setq visible-bell t)

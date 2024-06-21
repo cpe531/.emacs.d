@@ -3,9 +3,8 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("" default))
- '(package-selected-packages '(catppuccin-theme fireplace))
+ '(custom-safe-themes '("" default))
+ '(package-selected-packages '(magit catppuccin-theme fireplace))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -25,12 +24,10 @@
 ;; M-x load-theme is the correct way to do this
 ;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
 (load-theme 'catppuccin :no-confirm)
-(setq catppuccin-flavor 'latte) ;; 'latte, 'frappe, 'macchiato, or 'mocha
+(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
 (catppuccin-reload)
 
 ;; font
-;;(set-face-attribute 'default nil :font "IBM Plex Mono")
-;;(set-face-attribute 'default nil :font "Iosevka Term")
 (set-face-attribute 'default nil :font "Source Code Pro-10")
 
 ;; stop yelling at me

@@ -24,7 +24,7 @@
 ;; M-x load-theme is the correct way to do this
 ;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
 (load-theme 'catppuccin :no-confirm)
-(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
+(setq catppuccin-flavor 'latte) ;; 'latte, 'frappe, 'macchiato, or 'mocha
 (catppuccin-reload)
 
 ;; font

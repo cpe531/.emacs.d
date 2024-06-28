@@ -28,7 +28,8 @@
 (catppuccin-reload)
 
 ;; font
-(set-face-attribute 'default nil :font "Source Code Pro-10")
+;;(set-face-attribute 'default nil :font "Source Code Pro-10")
+(set-face-attribute 'default nil :font "IBM Plex Mono-10")
 
 ;; stop yelling at me
 (setq visible-bell t)

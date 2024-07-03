@@ -29,7 +29,7 @@
 
 ;; font
 ;;(set-face-attribute 'default nil :font "Source Code Pro-10")
-(set-face-attribute 'default nil :font "LM Mono 12-11.0")
+(set-face-attribute 'default nil :font "LM Mono 10-12")
 
 ;; stop yelling at me
 (setq visible-bell t)

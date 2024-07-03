@@ -4,7 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes '("" default))
- '(package-selected-packages '(magit catppuccin-theme fireplace))
+ '(package-selected-packages '(powershell magit catppuccin-theme fireplace))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -24,12 +24,12 @@
 ;; M-x load-theme is the correct way to do this
 ;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
 (load-theme 'catppuccin :no-confirm)
-(setq catppuccin-flavor 'latte) ;; 'latte, 'frappe, 'macchiato, or 'mocha
+(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
 (catppuccin-reload)
 
 ;; font
-;;(set-face-attribute 'default nil :font "Source Code Pro-10")
-(set-face-attribute 'default nil :font "LM Mono 10-12")
+;; (set-face-attribute 'default nil :font "LM Mono 10-12")
+(set-face-attribute 'default nil :font "Libertinus Mono-11")
 
 ;; stop yelling at me
 (setq visible-bell t)

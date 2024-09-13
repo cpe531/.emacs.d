@@ -3,3 +3,4 @@ elpa/*
 eshell/*
 org-persist/*
 transient/*
+eln-cache/*

@@ -3,7 +3,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(custom-enabled-themes '(leuven-dark))
  '(custom-safe-themes '("" default))
  '(package-selected-packages '(powershell magit catppuccin-theme fireplace))
  '(tool-bar-mode nil))
@@ -32,7 +31,7 @@
 ;; (set-face-attribute 'default nil :font "LM Mono 10-12")
 ;; (set-face-attribute 'default nil :font "Libertinus Mono-11")
 ;;(set-face-attribute 'default nil :font "Inconsolata-12.0")
-(set-face-attribute 'default nil :font "IBM Plex Mono-10")
+(set-face-attribute 'default nil :font "Fira Code Regular")
 
 ;; stop yelling at me
 (setq visible-bell t)

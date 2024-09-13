@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-enabled-themes '(leuven-dark))
  '(custom-safe-themes '("" default))
  '(package-selected-packages '(powershell magit catppuccin-theme fireplace))
  '(tool-bar-mode nil))
@@ -23,9 +24,9 @@
 ;; colour theme
 ;; M-x load-theme is the correct way to do this
 ;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
-(load-theme 'catppuccin :no-confirm)
-(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
-(catppuccin-reload)
+;;(load-theme 'catppuccin :no-confirm)
+;;(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
+;;(catppuccin-reload)
 
 ;; font
 ;; (set-face-attribute 'default nil :font "LM Mono 10-12")

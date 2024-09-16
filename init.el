@@ -7,8 +7,8 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("" default))
- '(package-selected-packages '(powershell magit fireplace))
+   '("249e100de137f516d56bcf2e98c1e3f9e1e8a6dce50726c974fa6838fbfcec6b" "" default))
+ '(package-selected-packages '(kaolin-themes rust-mode powershell magit fireplace))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -26,16 +26,13 @@
 
 ;; colour theme
 ;; M-x load-theme is the correct way to do this
+;; Use display-graphic-p to determine if running in GUI rather than term.
 ;; Use theme-choose-variant to swap between light and dark.
-;;(load-theme 'deeper-blue)	;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
-;;(load-theme 'catppuccin :no-confirm)
-;;(setq catppuccin-flavor 'frappe) ;; 'latte, 'frappe, 'macchiato, or 'mocha
-;;(catppuccin-reload)
+;;(load-theme 'deeper-blue) ;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
+(load-theme 'kaolin-valley-dark) ;; Try to stick with these theme for a while.
 
 ;; font
-;; (set-face-attribute 'default nil :font "LM Mono 10-12")
-;; (set-face-attribute 'default nil :font "Libertinus Mono-11")
-;; (set-face-attribute 'default nil :font "Fira Code Regular")
+(set-face-attribute 'default nil :font "Iosevka") ;; Try to stick with this font (or slab version)
 
 ;; stop yelling at me
 (setq visible-bell t)
@@ -47,7 +44,7 @@
 ;;(setq-default explicit-shell-file-name "/Users/chris/scoop/apps/git/current/bin/bash.exe")
 
 ;; Basic Config
-(setq next-screen-context-lines 5)	;; Number of lines of continuity when scrolling by screenfuls.
+(setq next-screen-context-lines 9) ;; Number of lines of continuity when scrolling by screenfuls.
 
 ;; Programming
 (add-hook 'prog-mode-hook 'display-line-numbers-mode)
@@ -55,9 +52,16 @@
 ;; C/C++
 (add-hook 'c-mode-hook 'display-fill-column-indicator-mode)
 (add-hook 'c++-mode-hook 'display-fill-column-indicator-mode)
-;;(setq display-fill-column-indicator-column 80)
 (defun erwin-c-setup ()
   (setq c-default-style "stroustrup" c-basic-offset 4
 	fill-column 80))
 (add-hook 'c-mode-hook 'erwin-c-setup)
 (add-hook 'c++-mode-hook 'erwin-c-setup)
+
+;; Rust
+(defun erwin-rust-setup ()
+  (setq fill-column 100)
+  (display-fill-column-indicator-mode)
+  (setq rust-format-on-save t)
+  (setq indent-tabs-mode nil))
+(add-hook 'rust-mode-hook 'erwin-rust-setup)

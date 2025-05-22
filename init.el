@@ -7,8 +7,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-safe-themes
-   '("249e100de137f516d56bcf2e98c1e3f9e1e8a6dce50726c974fa6838fbfcec6b" "" default))
- '(package-selected-packages '(kaolin-themes rust-mode powershell magit fireplace))
+   '("5a4cdc4365122d1a17a7ad93b6e3370ffe95db87ed17a38a94713f6ffe0d8ceb"
+     "249e100de137f516d56bcf2e98c1e3f9e1e8a6dce50726c974fa6838fbfcec6b"
+     "" default))
+ '(package-selected-packages
+   '(fireplace kaolin-themes magit nord-theme))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -29,10 +32,10 @@
 ;; Use display-graphic-p to determine if running in GUI rather than term.
 ;; Use theme-choose-variant to swap between light and dark.
 ;;(load-theme 'deeper-blue) ;; best theme -- Capoera Jungle Science Man in Yokohama, Surf's Up!
-(load-theme 'kaolin-valley-dark) ;; Try to stick with these theme for a while.
+(load-theme 'nord) ;; Try to stick with these theme for a while.
 
 ;; font
-(set-face-attribute 'default nil :font "Iosevka") ;; Try to stick with this font (or slab version)
+(set-face-attribute 'default nil :font "IBM Plex Mono") ;; Try to stick with this font (or slab version)
 
 ;; stop yelling at me
 (setq visible-bell t)
@@ -59,9 +62,9 @@
 (add-hook 'c++-mode-hook 'erwin-c-setup)
 
 ;; Rust
-(defun erwin-rust-setup ()
-  (setq fill-column 100)
-  (display-fill-column-indicator-mode)
-  (setq rust-format-on-save t)
-  (setq indent-tabs-mode nil))
-(add-hook 'rust-mode-hook 'erwin-rust-setup)
+;; (defun erwin-rust-setup ()
+;;  (setq fill-column 100)
+;;  (display-fill-column-indicator-mode)
+;;  (setq rust-format-on-save t)
+;;  (setq indent-tabs-mode nil))
+;; (add-hook 'rust-mode-hook 'erwin-rust-setup)
